@@ -10,7 +10,7 @@ function App() {
 
   const createUser = async () => {
     try {
-      const result = await axios.post('YOUR_API_GATEWAY_URL/create-user');
+      const result = await axios.post('https://a2vbwa2moa.execute-api.us-east-1.amazonaws.com/default/create_Iam_user');
       setResponse(result.data);
       setError(null);
     } catch (err) {
